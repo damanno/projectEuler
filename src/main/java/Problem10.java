@@ -1,31 +1,32 @@
+
+import java.math.BigInteger;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package util;
-
 /**
  *
  * @author damanno
  */
-public class UtilMethods {
-    
-    
-    public static boolean isPalindrome(int number) {
+public class Problem10 {
 
-        String numberS = String.valueOf(number);
-        int size = numberS.length();
-        String numberZ = "";
+    public static BigInteger summationPrimes(int lowerThan) {
 
-        for (int i = size - 1; i >= 0; i--) {
-            numberZ += numberS.charAt(i);
+        BigInteger sumPrimes = BigInteger.ZERO;
+        
+        for (int i = 2; i < lowerThan; i++) {
+            if (isPrime(i)) {
+                sumPrimes = sumPrimes.add(BigInteger.valueOf(i));
+            }
         }
 
-        return numberZ.equals(numberS);
+        return sumPrimes;
+
     }
-    
-    public static boolean isPrime(int n) {
+
+    private static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
         } else if (n == 2) {
@@ -40,5 +41,5 @@ public class UtilMethods {
         }
         return true;
     }
-    
+
 }
