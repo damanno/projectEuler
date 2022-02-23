@@ -10,7 +10,7 @@ import java.math.BigInteger;
  *
  * @author damanno
  */
-public class Problem11 {
+public class Problem011 {
 
     @SuppressWarnings("empty-statement")
     public static long largestProductGrid() {

@@ -10,7 +10,7 @@ import java.math.BigInteger;
  *
  * @author damanno
  */
-public class Problem10 {
+public class Problem010 {
 
     public static BigInteger summationPrimes(int lowerThan) {
 

@@ -33,7 +33,7 @@ public class Main {
         totalL = Problem12.highlyDivisibleTriangularNumber(5);
         */
         
-        totalS = Problem13.largeSum(10);
+        totalS = Problem013.largeSum(10);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);

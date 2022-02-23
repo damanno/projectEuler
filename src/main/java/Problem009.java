@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem9 {
+public class Problem009 {
 
     public long pythagoreanTriplet(int sumResult) {
 

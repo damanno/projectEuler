@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem2 {
+public class Problem002 {
     
     
     public static double evenFibonacci(int number, int maximo) {
