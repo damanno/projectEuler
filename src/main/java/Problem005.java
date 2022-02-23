@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem5 {
+public class Problem005 {
     
     
     public static long smallestDivisibleNumberByAllNumbers(int rangeInit, int rangeEnd) {

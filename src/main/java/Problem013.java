@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author danilo
  */
-public class Problem13 {
+public class Problem013 {
 
     public static String largeSum(int frontDigitsNumber) {
 

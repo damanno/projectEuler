@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem3 {
+public class Problem003 {
     
     
     public static long largestPrimeFactor(long number) {

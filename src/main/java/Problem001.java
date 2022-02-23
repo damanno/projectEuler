@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem1 {
+public class Problem001 {
     
     
     public static double multiples3or5(int number) {

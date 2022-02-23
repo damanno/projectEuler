@@ -8,7 +8,7 @@
  *
  * @author damanno
  */
-public class Problem7 {
+public class Problem007 {
     
     
     public static long primeNumberPosition(int position) {
