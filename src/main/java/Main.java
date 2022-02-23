@@ -32,9 +32,10 @@ public class Main {
         totalL = Problem10.summationPrimes(2_000_000);
         totalL = Problem12.highlyDivisibleTriangularNumber(5);
         totalS = Problem013.largeSum(10);
+        totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
         */
         
-        totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
+        total = Problem015.routeNumberLatticePath(15, 15);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
