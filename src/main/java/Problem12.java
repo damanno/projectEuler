@@ -1,7 +1,6 @@
 
 import java.util.ArrayList;
 import java.util.List;
-import util.UtilMethods;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,7 +16,6 @@ public class Problem12 {
     public static long highlyDivisibleTriangularNumber(int maxDivisor) {
 
         List<Integer> sequence = new ArrayList<>();
-        long result = 0;
         boolean continua = true;
         int valor = 0;
         int iterator = 1;
@@ -44,7 +42,7 @@ public class Problem12 {
 
         }
 
-        return result;
+        return valor;
 
     }
 
