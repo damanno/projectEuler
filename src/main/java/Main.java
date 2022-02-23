@@ -31,9 +31,10 @@ public class Main {
         totalL = Problem9.pythagoreanTriplet(1000);
         totalL = Problem10.summationPrimes(2_000_000);
         totalL = Problem12.highlyDivisibleTriangularNumber(5);
+        totalS = Problem013.largeSum(10);
         */
         
-        totalS = Problem013.largeSum(10);
+        totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
