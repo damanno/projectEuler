@@ -12,7 +12,7 @@ import util.UtilMethods;
  *
  * @author damanno
  */
-public class Problem12 {
+public class Problem012 {
 
     public static long highlyDivisibleTriangularNumber(int maxDivisor) {
 

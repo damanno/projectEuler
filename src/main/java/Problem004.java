@@ -1,6 +1,7 @@
 
 import util.UtilMethods;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -11,7 +12,7 @@ import util.UtilMethods;
  *
  * @author damanno
  */
-public class Problem4 {
+public class Problem004 {
     
     
     public static int largestPalidromeFromProduct() {
