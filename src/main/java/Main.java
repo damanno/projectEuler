@@ -15,6 +15,8 @@ public class Main {
 
     public static double total = 0d;
     public static long totalL = 0l;
+    public static BigInteger totalBI = BigInteger.ZERO;
+    public static String totalS = "";
 
     public static void main(String[] args) {
         /*
@@ -28,12 +30,15 @@ public class Main {
         totalL = primeNumberPosition(10001);
         totalL = Problem9.pythagoreanTriplet(1000);
         totalL = Problem10.summationPrimes(2_000_000);
-         */
-        
         totalL = Problem12.highlyDivisibleTriangularNumber(5);
+        */
+        
+        totalS = Problem13.largeSum(10);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
+        System.out.println("totalL " + totalBI);
+        System.out.println("totalL " + totalS);
 
     }
 
