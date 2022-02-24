@@ -21,7 +21,8 @@ public class Problem015 {
         int dimensions = 2;
         int total = x + y;
 
-        List<String> combinacoes = new ArrayList<>();
+        int routeNumberAccepted = 0;
+        int routeNumberNotAccepted = 0;
         String binarioMaximo = "";
 
         for (i = 0; i < total; i++) {
@@ -31,6 +32,7 @@ public class Problem015 {
         long maxValue = new BigInteger(binarioMaximo, 2).longValue();
 
         BigInteger tamanho = new BigInteger(String.valueOf(i), 10);
+        System.out.print(maxValue);
 
         for (i = 0; i < maxValue; i++) {
 
@@ -43,11 +45,59 @@ public class Problem015 {
             }
 
             if (soma == x) {
-                combinacoes.add(number);
+                routeNumberAccepted++;
+            } else {
+                routeNumberNotAccepted++;
             }
 
         }
-        return combinacoes.size();
+
+        System.out.println("rotas " + routeNumberAccepted);
+        System.out.println("n rotas " + routeNumberNotAccepted);
+
+        return routeNumberAccepted;
+    }
+
+    public static BigInteger routeNumberLatticePathCentralBinomialCoefficient(int x, int y) {
+
+        BigInteger routeNumberAccepted = BigInteger.ZERO;
+
+        List<BigInteger> listaA = new ArrayList<>();
+        List<BigInteger> listaB = new ArrayList<>();
+
+        listaA.add(BigInteger.ONE);
+        //6 - 11
+
+        for (int a = 0; a <= x; a++) {
+            int b = 0;
+            if (a == 0) {
+                for (b = 0; b <= y; b++) {
+                    listaA.add(BigInteger.ONE);
+                    System.out.print(listaA.get(b) + " - ");
+                }
+                System.out.println("");
+            } else {
+                for (b = 0; b <= y; b++) {
+                    if (b == 0) {
+                        listaB.add(BigInteger.ONE);
+                    } else {
+                        listaB.add( listaB.get(b - 1).add(listaA.get(b)) );
+                        routeNumberAccepted = listaB.get(b - 1).add(listaA.get(b));
+                    }
+                    System.out.print(listaB.get(b) + " - ");
+                }
+                System.out.println("");
+                listaA.clear();
+                listaA = new ArrayList<>(listaB);
+
+                
+
+                listaB.clear();
+            }
+        }
+
+        System.out.println("");
+        return routeNumberAccepted;
     }
 
 }
