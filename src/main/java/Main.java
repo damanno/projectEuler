@@ -1,4 +1,3 @@
-
 import java.math.BigInteger;
 
 /*
@@ -33,9 +32,10 @@ public class Main {
         totalL = Problem12.highlyDivisibleTriangularNumber(5);
         totalS = Problem013.largeSum(10);
         totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
+        totalBI = Problem015.routeNumberLatticePathCentralBinomialCoefficient(20 , 20);
         */
         
-        totalBI = Problem015.routeNumberLatticePathCentralBinomialCoefficient(20 , 20);
+        totalBI = Problem016.power2DigitSum(1000);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
