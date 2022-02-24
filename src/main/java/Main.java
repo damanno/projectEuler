@@ -35,7 +35,7 @@ public class Main {
         totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
         */
         
-        total = Problem015.routeNumberLatticePath(15, 15);
+        total = Problem015.routeNumberLatticePath(5 , 5);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);

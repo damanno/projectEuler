@@ -21,7 +21,8 @@ public class Problem015 {
         int dimensions = 2;
         int total = x + y;
 
-        List<String> combinacoes = new ArrayList<>();
+        int routeNumberAccepted = 0;
+        int routeNumberNotAccepted = 0;
         String binarioMaximo = "";
 
         for (i = 0; i < total; i++) {
@@ -31,6 +32,7 @@ public class Problem015 {
         long maxValue = new BigInteger(binarioMaximo, 2).longValue();
 
         BigInteger tamanho = new BigInteger(String.valueOf(i), 10);
+        System.out.print(maxValue);
 
         for (i = 0; i < maxValue; i++) {
 
@@ -43,11 +45,17 @@ public class Problem015 {
             }
 
             if (soma == x) {
-                combinacoes.add(number);
+                routeNumberAccepted++;
+            } else {
+                routeNumberNotAccepted++;
             }
 
         }
-        return combinacoes.size();
+
+        System.out.println("rotas " + routeNumberAccepted);
+        System.out.println("n rotas " + routeNumberNotAccepted);
+
+        return routeNumberAccepted;
     }
 
 }
