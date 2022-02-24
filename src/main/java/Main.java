@@ -37,7 +37,6 @@ public class Main {
         
         totalBI = Problem016.power2DigitSum(1000);
 
-
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
         System.out.println("totalL " + totalBI);
