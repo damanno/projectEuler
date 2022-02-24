@@ -58,4 +58,46 @@ public class Problem015 {
         return routeNumberAccepted;
     }
 
+    public static BigInteger routeNumberLatticePathCentralBinomialCoefficient(int x, int y) {
+
+        BigInteger routeNumberAccepted = BigInteger.ZERO;
+
+        List<BigInteger> listaA = new ArrayList<>();
+        List<BigInteger> listaB = new ArrayList<>();
+
+        listaA.add(BigInteger.ONE);
+        //6 - 11
+
+        for (int a = 0; a <= x; a++) {
+            int b = 0;
+            if (a == 0) {
+                for (b = 0; b <= y; b++) {
+                    listaA.add(BigInteger.ONE);
+                    System.out.print(listaA.get(b) + " - ");
+                }
+                System.out.println("");
+            } else {
+                for (b = 0; b <= y; b++) {
+                    if (b == 0) {
+                        listaB.add(BigInteger.ONE);
+                    } else {
+                        listaB.add( listaB.get(b - 1).add(listaA.get(b)) );
+                        routeNumberAccepted = listaB.get(b - 1).add(listaA.get(b));
+                    }
+                    System.out.print(listaB.get(b) + " - ");
+                }
+                System.out.println("");
+                listaA.clear();
+                listaA = new ArrayList<>(listaB);
+
+                
+
+                listaB.clear();
+            }
+        }
+
+        System.out.println("");
+        return routeNumberAccepted;
+    }
+
 }
