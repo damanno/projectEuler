@@ -1,3 +1,4 @@
+
 import java.math.BigInteger;
 
 /*
@@ -5,7 +6,6 @@ import java.math.BigInteger;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author damanno
@@ -33,9 +33,10 @@ public class Main {
         totalS = Problem013.largeSum(10);
         totalBI = Problem014.returnNumberProducesLargestCollatzChain(1000000);
         totalBI = Problem015.routeNumberLatticePathCentralBinomialCoefficient(20 , 20);
-        */
-        
         totalBI = Problem016.power2DigitSum(1000);
+         */
+
+        totalL = Problem017.numberLetterCounts(1000);
 
         System.out.println("total " + total);
         System.out.println("totalL " + totalL);
