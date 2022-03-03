@@ -35,10 +35,12 @@ public class Main {
         totalBI = Problem015.routeNumberLatticePathCentralBinomialCoefficient(20 , 20);
         totalBI = Problem016.power2DigitSum(1000);
         totalL = Problem017.numberLetterCounts(1000);
+        total = Problem018.maximumPathSumSolution();
+        Problem019.countingSundays();
+        totalL = Problem017.numberLetterCounts(1000);
          */
 
         total = Problem018.maximumPathSumSolution();
-
         System.out.println("total " + total);
         /*
         System.out.println("totalL " + totalL);
