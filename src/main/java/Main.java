@@ -12,11 +12,6 @@ import java.math.BigInteger;
  */
 public class Main {
 
-    public static double total = 0d;
-    public static long totalL = 0l;
-    public static BigInteger totalBI = BigInteger.ZERO;
-    public static String totalS = "";
-
     public static void main(String[] args) {
         /*
         total = calculaRendimento(0, 4, 0.5, 100);
@@ -38,15 +33,11 @@ public class Main {
         total = Problem018.maximumPathSumSolution();
         Problem019.countingSundays();
         totalL = Problem017.numberLetterCounts(1000);
-         */
-
         total = Problem018.maximumPathSumSolution();
-        System.out.println("total " + total);
-        /*
-        System.out.println("totalL " + totalL);
-        System.out.println("totalL " + totalBI);
-        System.out.println("totalL " + totalS);
-         */
+        */
+        
+        System.out.println(Problem020.factorialDigitSum(10));
+        
     }
 
 }
