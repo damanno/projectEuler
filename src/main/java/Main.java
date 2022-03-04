@@ -35,8 +35,9 @@ public class Main {
         totalL = Problem017.numberLetterCounts(1000);
         total = Problem018.maximumPathSumSolution();
         System.out.println(Problem020.factorialDigitSum(10));
-        */
         System.out.println(Problem021.sumAmicableNumbersUnder(10000));
+        */
+        System.out.println(Problem022.namesTotalScore());
         
         
     }
