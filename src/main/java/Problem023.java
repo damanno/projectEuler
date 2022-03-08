@@ -19,16 +19,12 @@ public class Problem023 {
         List<Integer> abundantNumbersSum = new ArrayList<>();
         int max = 28123;
         int min = 12;
-        int flag = 0;
-        
         for (int i = min; i <= max; i++) {
             int result = abundantNumberSum(i);
             if (result > i) {
                 abundantNumbers.add(i);
-                flag++;
             }
         }
-
         for (int i = 0; i < abundantNumbers.size(); i++) {
             for (int f = i; f < abundantNumbers.size(); f++) {
                 
