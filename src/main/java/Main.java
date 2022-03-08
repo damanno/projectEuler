@@ -38,8 +38,9 @@ public class Main {
         System.out.println(Problem021.sumAmicableNumbersUnder(10000));
         System.out.println(Problem022.namesTotalScore());
         System.out.println(Problem023.sumOfNomAbundantNumbers());
-        */
         Problem024.lexicographicPermutationTest();
+        */
+        Problem025.digitFibonacciNumber();
         
         
     }
