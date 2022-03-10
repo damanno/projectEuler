@@ -15,20 +15,22 @@ public class Problem026 {
         int longest = 0;
         while (flag < max) {
             flag++;
-            BigDecimal cycle = reciprocalCyclesOne(flag);
+            int cycle = reciprocalCyclesOne(flag);
 
-            if (longest < flag) {
+            if (longest < cycle) {
                 longest = flag;
             }
         }
+        
+        System.out.println("x - > " + longest);
 
-        return 0;
+        return longest;
 
     }
 
-    public static BigDecimal reciprocalCyclesOne(int unit) {
+    public static int reciprocalCyclesOne(int unit) {
 
-        BigDecimal cycle = BigDecimal.ONE;
+        int cycle = 0;
 
         List<Integer> remainderList = new ArrayList<>();
         int remainder = (1 % unit);
@@ -42,13 +44,14 @@ public class Problem026 {
             if (remainderList.contains(remainder)) {
                 processing = false;
                 sizeRemainder = remainderList.lastIndexOf(remainder);
+            } else {
+                remainderList.add(remainder);
             }
-            remainderList.add(remainder);
         }
-        System.out.println(sizeRemainder);
-        System.out.println("1/" + unit + " = " + cycleBuilder);
+        System.out.println("1/" + unit + " = " + cycleBuilder.substring(0,cycleBuilder.length()-1));
 
-        return cycle;
+        
+        return cycleBuilder.substring(0,cycleBuilder.length()-1).length();
     }
 
 }

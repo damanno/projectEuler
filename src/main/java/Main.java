@@ -38,7 +38,7 @@ public class Main {
         Problem024.lexicographicPermutationTest();
         Problem025.digitFibonacciNumber();
         */
-        Problem026.longestReciprocalCycles(10);
+        Problem026.longestReciprocalCycles(1000);
         
         
     }
