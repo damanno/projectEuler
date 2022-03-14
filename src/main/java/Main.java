@@ -37,8 +37,10 @@ public class Main {
         System.out.println(Problem023.sumOfNomAbundantNumbers());
         Problem024.lexicographicPermutationTest();
         Problem025.digitFibonacciNumber();
-        */
         Problem026.longestReciprocalCycles(1000);
+        */
+        Problem028.testSpiral();
+        Problem028.runSpiral(1001);
         
         
     }
