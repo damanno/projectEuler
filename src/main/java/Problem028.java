@@ -7,22 +7,20 @@ public class Problem028 {
 
     static public int[][] spiral;
 
+    public static void runSpiral(int x) {
+        generateSpiral(x);
+        printSpiral(spiral);
+        sumDiagonalsSpiral(spiral);
+    }
+    
     public static void testSpiral() {
-        generateSpiral(5, 5);
+        generateSpiral(5);
         printSpiral(spiral);
+        sumDiagonalsSpiral(spiral);
     }
 
-    public static void testSpiralProblem() {
-        generateSpiral(9, 9);
-        printSpiral(spiral);
-    }
-
-    public static void testSpiralProblemEven() {
-        generateSpiral(10, 10);
-        printSpiral(spiral);
-    }
-
-    public static void generateSpiral(int x, int y) {
+    public static void generateSpiral(int x) {
+        int y = x;
         spiral = new int[x][y];
         int startX = (x / 2) - (x % 2 == 0 ? 1 : 0);
         int startY = (y / 2) - (x % 2 == 0 ? 1 : 0);
@@ -81,8 +79,20 @@ public class Problem028 {
         }
     }
 
-    public static void sumDiagonalsSpiral(int[][] spiral) {
-
+    public static long sumDiagonalsSpiral(int[][] spiral) {
+        long total = 0l;
+        int x = spiral.length;
+        int i = 0;
+        int f = x-1;
+        while (i<x) {
+            total += spiral[i][i];
+            total += spiral[i][f];
+            i++;
+            f--;
+        }
+        total--;
+        System.out.println("total sum diagonals " + total);
+        return total;
     }
 
 }

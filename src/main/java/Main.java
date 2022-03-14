@@ -39,8 +39,8 @@ public class Main {
         Problem025.digitFibonacciNumber();
         Problem026.longestReciprocalCycles(1000);
         */
-        //Problem028.testSpiralProblem();
-        Problem028.testSpiralProblemEven();
+        Problem028.testSpiral();
+        Problem028.runSpiral(1001);
         
         
     }
