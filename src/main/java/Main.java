@@ -38,9 +38,11 @@ public class Main {
         Problem024.lexicographicPermutationTest();
         Problem025.digitFibonacciNumber();
         Problem026.longestReciprocalCycles(1000);
-        */
+        //problem027 :(
         Problem028.testSpiral();
         Problem028.runSpiral(1001);
+        */
+        System.out.println(Problem029.amountDistinctPowers(2, 100));
         
         
     }
