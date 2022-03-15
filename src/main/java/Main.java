@@ -41,9 +41,11 @@ public class Main {
         //problem027 :(
         Problem028.testSpiral();
         Problem028.runSpiral(1001);
-        */
         System.out.println(Problem029.amountDistinctPowers(2, 100));
+        */
         
+        Problem030.digitFourthPower();
+        Problem030.digitFifthPower();
         
     }
 
