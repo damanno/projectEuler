@@ -42,10 +42,11 @@ public class Main {
         Problem028.testSpiral();
         Problem028.runSpiral(1001);
         System.out.println(Problem029.amountDistinctPowers(2, 100));
-        */
-        
         Problem030.digitFourthPower();
         Problem030.digitFifthPower();
+        */
+        
+        Problem031.totalCoinSum();
         
     }
 
