@@ -17,8 +17,8 @@ public class Problem032 {
 
         List<Integer> resultList = new ArrayList<>();
 
-        for (int i = 1; i < 999; i++) {
-            for (int f = 1; f < 999; f++) {
+        for (int i = 1; i < 9999; i++) {
+            for (int f = 1; f < 9999; f++) {
                 int total = i * f;
                 if (checkPandigital(i, f, total)) {
                     if (!resultList.contains(total)) {
@@ -47,6 +47,7 @@ public class Problem032 {
         if (checked.contains("1") && checked.contains("2") && checked.contains("3") && checked.contains("4")
                 && checked.contains("5") && checked.contains("6") && checked.contains("7") && checked.contains("8")
                 && checked.contains("9")) {
+            System.out.println(checked);
             return true;
         }
         return false;
