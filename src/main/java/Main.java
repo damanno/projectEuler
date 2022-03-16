@@ -44,9 +44,10 @@ public class Main {
         System.out.println(Problem029.amountDistinctPowers(2, 100));
         Problem030.digitFourthPower();
         Problem030.digitFifthPower();
-        */
-        
         Problem031.totalCoinSum();
+        */
+        Problem032.pandigitalProduct();
+        
         
     }
 
