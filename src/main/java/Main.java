@@ -45,9 +45,11 @@ public class Main {
         Problem030.digitFourthPower();
         Problem030.digitFifthPower();
         Problem031.totalCoinSum();
-        */
         Problem032.pandigitalProduct();
+        Problem033.productDigitCancelligFractions();
+        */
         
+        Problem034.findAllDigitFactorials();
         
     }
 
