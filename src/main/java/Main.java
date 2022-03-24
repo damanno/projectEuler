@@ -49,7 +49,7 @@ public class Main {
         Problem033.productDigitCancelligFractions();
         */
         
-        Problem034.findAllDigitFactorials();
+        Problem035.circularPrimes();
         
     }
 
