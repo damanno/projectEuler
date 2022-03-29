@@ -16,8 +16,8 @@ public class Problem031 {
 
         int total = 200;
         int[] coinBination = new int[total+1];
-        int coin;
-        
+        int coin; 
+       
         coinBination[0] = 1;
         for (int i = 0 ; i< poundCoins.length-1; i++) {
             coin = poundCoins[i];

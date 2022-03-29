@@ -47,9 +47,11 @@ public class Main {
         Problem031.totalCoinSum();
         Problem032.pandigitalProduct();
         Problem033.productDigitCancelligFractions();
-        */
-        
         Problem035.circularPrimes();
+        */
+        Problem036.sumOfAllDoubleBasePalindrome(1000000);
+        
+        
         
     }
 
