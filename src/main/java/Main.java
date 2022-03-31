@@ -49,8 +49,9 @@ public class Main {
         Problem033.productDigitCancelligFractions();
         Problem035.circularPrimes();
         Problem036.sumOfAllDoubleBasePalindrome(1000000);
-        */
         Problem037.truncatablePrimes(11);
+        */
+        Problem038.getLargestPandigitalMultiplesRange();
         
         
     }
