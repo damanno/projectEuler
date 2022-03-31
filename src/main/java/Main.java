@@ -51,8 +51,10 @@ public class Main {
         Problem036.sumOfAllDoubleBasePalindrome(1000000);
         Problem037.truncatablePrimes(11);
         Problem038.getLargestPandigitalMultiplesRange();
-        */
         Problem039.testNumberRangeUnder1001RightTriangles();
+        */
+        Problem040.getProductFromIrrationalConstant();
+        
         
         
     }
