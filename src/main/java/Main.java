@@ -53,8 +53,9 @@ public class Main {
         Problem038.getLargestPandigitalMultiplesRange();
         Problem039.testNumberRangeUnder1001RightTriangles();
         Problem040.getProductFromIrrationalConstant();
-        */
         Problem041.findLargestPandigitalPrime();
+        */
+        Problem038.getLargestPandigitalMultiplesRange();
         
         
     }

@@ -14,12 +14,12 @@ public class Problem038 {
         if (number.length() != 9) {
             return false;
         }
-        if (number.contains("1") && number.contains("2") && number.contains("3") && number.contains("4")
-                && number.contains("5") && number.contains("6") && number.contains("7") && number.contains("8")
-                && number.contains("9")) {
-            return true;
+        for (int i = 1; i <= number.length(); i++) {
+            if (!number.contains(i + "") ) {
+                return false;
+            }
         }
-        return false;
+        return true;
     }
 
     public static String pandigitalMultiples(long number) {
